@@ -19,16 +19,16 @@ int main (void)
   
 	/* set PORTB for output*/
 	DDRB = BV(pb1);
-    setBit(PORTB, pb4); _delay_ms(2000);
+        setBit(PORTB, pb4); _delay_ms(2000);
   
   	while(1) 
     {	
         if (isPushed(PINB, pb4))
         {
-        	toggleBit(PORTB, pb1); 
+            toggleBit(PORTB, pb1); 
             _delay_ms(2000);
         }               
-	}
+    }
 
 	return 0;
 }
