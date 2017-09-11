@@ -9,7 +9,7 @@
 
 int main (void)
 {
-	uint8_t		pb0 = 0,
+	uint8_t	pb0 = 0,
                 pb1 = 1,
                 pb2 = 2,
                 pb3 = 3,
