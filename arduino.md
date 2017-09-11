@@ -105,3 +105,26 @@ Exemplos:
                             |
                             ` muda o bit
 
+## Entradas Digitais
+
+Quando um pino de uma PORTA é configurado como entrada, o registrador PIN lê o
+valor da tensão no pino.
+
+                                       /
+         /                             | BIT == 1,  5V
+        |                              |
+        |  BIT == 1, saída  =>  PORTB <
+        |                              |
+DDRB   <                               | BIT == 0, 0V
+        |                              \
+        |
+        |                              /
+        |                              | BIT == 1,  5V
+        |                              |
+        | BIT == 0, entrada =>  PORTB <
+        |                              |
+        |                              | BIT == 0, 0V
+        |                               \
+
+
+PINB
